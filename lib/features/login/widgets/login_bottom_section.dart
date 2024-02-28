@@ -15,7 +15,7 @@ class LoginBottomSection extends StatelessWidget {
           ButtonItem(
               title: "LOG IN",
               onPress: () {
-
+                  Navigator.pushNamed(context, '/BottomNavigation');
               },
               buttonWidth: MediaQuery.of(context).size.width * 0.95),
           SizedBox(height: 20,),

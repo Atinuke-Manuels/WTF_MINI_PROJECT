@@ -23,7 +23,7 @@ class SplashScreen extends StatelessWidget {
               buttonWidth: MediaQuery.of(context).size.width * 0.7,
               title: "Let's Get Started",
               onPress: () {
-                Navigator.pushNamed(context, '/HomePage');
+                Navigator.pushNamed(context, '/LoginPage');
               },
               arrowIcon: Icon(Icons.arrow_forward, color: Colors.white,),
             )
