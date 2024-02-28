@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class TextInputField extends StatelessWidget {
   const TextInputField({
     super.key,
-    required this.label,
+    // required this.label,
     required this.hint,
     required this.leading,
     this.trailing,
@@ -11,7 +11,7 @@ class TextInputField extends StatelessWidget {
     this.obscure,
   });
 
-  final String label;
+  // final String label;
   final String hint;
   final Icon leading;
   final Icon? trailing;
@@ -27,7 +27,7 @@ class TextInputField extends StatelessWidget {
       ),
       child: TextField(
         decoration: InputDecoration(
-          labelText: label,
+          // labelText: label,
           prefixIcon: leading,
           hintText: hint,
           suffixIcon: trailing,

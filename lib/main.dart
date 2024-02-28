@@ -1,4 +1,5 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:blend/features/forgot_password/page/forgot_password_page.dart';
 import 'package:blend/features/registration/page/registration_page.dart';
 import 'package:blend/features/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -30,8 +31,9 @@ class MyApp extends StatelessWidget {
         nextScreen: SplashScreen(),
       ),
       routes: {
-        '/HomePage': (context) => const LoginPage(),
-        '/RegistrationPage': (context) => const RegistrationPage()
+        '/LoginPage': (context) => const LoginPage(),
+        '/RegistrationPage': (context) => const RegistrationPage(),
+        '/ForgotPasswordPage': (context) => const ForgotPasswordPage()
       });
   }
 }

@@ -28,8 +28,8 @@ class RegistrationTopSection extends StatelessWidget {
             height: 40,
           ),
           TextInputField(
-            label: 'User Name',
-            hint: 'aamanuels',
+            // label: 'User Name',
+            hint: 'User Name',
             leading: Icon(
               Icons.person,
               color: Colors.grey.shade500,
@@ -41,8 +41,8 @@ class RegistrationTopSection extends StatelessWidget {
             height: 25,
           ),
           TextInputField(
-            label: 'Email Address',
-            hint: 'you@example.com',
+            // label: 'Email Address',
+            hint: 'Email Address',
             leading: Icon(
               Icons.email_outlined,
               color: Colors.grey.shade500,
@@ -54,8 +54,8 @@ class RegistrationTopSection extends StatelessWidget {
             height: 25,
           ),
           TextInputField(
-            label: 'Password',
-            hint: '*********',
+            // label: 'Password',
+            hint: 'Password',
             leading: Icon(
               Icons.lock_outline_rounded,
               color: Colors.grey.shade500,

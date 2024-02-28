@@ -63,7 +63,7 @@ class RegistrationBottomSection extends StatelessWidget {
               Text("Already Have An Account? ", style: TextStyle(color: Colors.grey.shade600, fontSize: 16),),
               GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/HomePage');
+                    Navigator.pushNamed(context, '/LoginPage');
                   },
                   child: Text("Log In", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),))
             ],

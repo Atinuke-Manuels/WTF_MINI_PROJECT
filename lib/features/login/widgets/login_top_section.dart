@@ -30,8 +30,8 @@ class LoginTopSection extends StatelessWidget {
             height: 40,
           ),
           TextInputField(
-            label: 'Email Address',
-            hint: 'you@example.com',
+            // label: 'Email Address',
+            hint: 'Email Address',
             leading: Icon(
               Icons.email_outlined,
               color: Colors.grey.shade500,
@@ -43,8 +43,8 @@ class LoginTopSection extends StatelessWidget {
             height: 25,
           ),
           TextInputField(
-            label: 'Password',
-            hint: '*********',
+            // label: 'Password',
+            hint: 'Password',
             leading: Icon(
               Icons.lock_outline_rounded,
               color: Colors.grey.shade500,
@@ -64,7 +64,9 @@ class LoginTopSection extends StatelessWidget {
           Container(
             alignment: Alignment.bottomRight,
             child: InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/ForgotPasswordPage');
+                },
                 child: Text(
                   "Forgot Password?",
                   style: TextStyle(color: Colors.grey.shade600),
