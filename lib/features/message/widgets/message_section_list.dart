@@ -6,31 +6,32 @@ class MessageSectionList extends StatelessWidget {
   const MessageSectionList({
     super.key,
   });
-
+  
+  
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        MessageSectionItem(
-          image: "assets/message/msg15.jpg",
-          title: "Rozzanne Barrientes",
-          subtitle: "A wonderful serenity has taken place in " ,
-          messageCount: Container(
-            height: 18, width: 18,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: Color(0xFF00A6A3)),
-            child: Text("2", style: TextStyle(color: Colors.white, fontSize: 10,), textAlign: TextAlign.center,),
+  MessageSectionItem(
+            image: "assets/message/msg15.jpg",
+            title: "Rozzanne Barrientes",
+            subtitle: "A wonderful serenity has taken place in " ,
+            messageCount: Container(
+              height: 18, width: 18,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: Color(0xFF00A6A3)),
+              child: Text("2", style: TextStyle(color: Colors.white, fontSize: 10,), textAlign: TextAlign.center,),
+            ),
           ),
-        ),
-        MessageSectionItem(
-          image: "assets/message/msg7.jpg",
-          title: "Anaya Sanji",
-          subtitle: "What about Paypal? " ,
-          messageCount: Container(
-            height: 18, width: 18,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: Color(0xFF00A6A3)),
-            child: Text("1", style: TextStyle(color: Colors.white, fontSize: 10,), textAlign: TextAlign.center,),
+          MessageSectionItem(
+            image: "assets/message/msg7.jpg",
+            title: "Anaya Sanji",
+            subtitle: "What about Paypal? " ,
+            messageCount: Container(
+              height: 18, width: 18,
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: Color(0xFF00A6A3)),
+              child: Text("1", style: TextStyle(color: Colors.white, fontSize: 10,), textAlign: TextAlign.center,),
+            ),
           ),
-        ),
         MessageSectionItem(
           image: "assets/message/msg8.jpg",
           title: "Elizabeth Olsen",
