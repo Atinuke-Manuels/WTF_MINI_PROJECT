@@ -5,20 +5,22 @@ class TextInputField extends StatelessWidget {
     super.key,
     // required this.label,
     required this.hint,
-    required this.leading,
+    this.leading,
     this.trailing,
     required  this.keyboardType,
     this.obscure,
     this.controller,
+    this.label,
   });
 
   // final String label;
   final String hint;
-  final Icon leading;
+  final Icon? leading;
   final Icon? trailing;
   final TextInputType keyboardType;
   final bool? obscure;
   final TextEditingController? controller;
+  final String? label;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +34,7 @@ class TextInputField extends StatelessWidget {
       child: TextFormField(
         controller: controller,
         decoration: InputDecoration(
-          // labelText: label,
+          labelText: label,
           prefixIcon: leading,
           hintText: hint,
           suffixIcon: trailing,

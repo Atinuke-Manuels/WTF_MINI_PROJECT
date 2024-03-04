@@ -16,8 +16,7 @@ class LoginTopSection extends StatelessWidget {
         children: [
           Text(
             "Welcome Back!",
-            style:
-            TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
           Container(
             width: MediaQuery.of(context).size.width * 0.6,

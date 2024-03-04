@@ -12,14 +12,19 @@ class HomeHeaderSection extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(8.0)),
-              child: Container(
-                height: 40,
-                width: 40,
-                color: Color(0xFF00A6A3),
-                padding: EdgeInsets.all(4),
-                child: Icon(Icons.dehaze_rounded, size: 22, color: Colors.white,),
+            InkWell(
+              onTap: () {
+                Scaffold.of(context).openDrawer();
+              },
+              child: ClipRRect(
+                borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                child: Container(
+                  height: 40,
+                  width: 40,
+                  color: Color(0xFF00A6A3),
+                  padding: EdgeInsets.all(4),
+                  child: Icon(Icons.dehaze_rounded, size: 22, color: Colors.white,),
+                ),
               ),
             ),
             ClipRRect(
@@ -28,7 +33,7 @@ class HomeHeaderSection extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 30,),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

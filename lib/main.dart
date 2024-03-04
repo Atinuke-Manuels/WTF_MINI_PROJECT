@@ -2,8 +2,11 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:blend/features/forgot_password/page/forgot_password_page.dart';
 import 'package:blend/features/home/page/home_page.dart';
 import 'package:blend/features/home/page/bottom_navigation.dart';
+import 'package:blend/features/message/page/message_section.dart';
+import 'package:blend/features/profile/page/profile_section.dart';
 import 'package:blend/features/registration/page/registration_page.dart';
 import 'package:blend/features/pages/splash_screen.dart';
+import 'package:blend/features/settings/page/settings_section.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -46,6 +49,9 @@ class MyApp extends StatelessWidget {
         '/ForgotPasswordPage': (context) => const ForgotPasswordPage(),
         '/BottomNavigation': (context) => const BottomNavigation(),
         '/HomePage': (context) => const HomePage(),
+        '/MessageSection': (context) => const MessageSection(),
+        '/ProfileSection': (context) => const ProfileSection(),
+        '/SettingsSection': (context) => const SettingsSection(),
       });
   }
 }

@@ -9,6 +9,7 @@ class scrollable_home_item extends StatelessWidget {
     required this.title,
     required this.subTitle,
     required this.location,
+    required this.padding,
   });
 
   final Widget firstImg;
@@ -17,6 +18,7 @@ class scrollable_home_item extends StatelessWidget {
   final String title;
   final String subTitle;
   final String location;
+  final double padding;
 
   @override
   Widget build(BuildContext context) {
@@ -42,25 +44,39 @@ class scrollable_home_item extends StatelessWidget {
                       height: 32,
                       width: 32,
                       color: Colors.grey.shade300,
-                      padding: EdgeInsets.all(8),
+                      padding: EdgeInsets.all(padding),
                       child: firstImg,
                     ),
                   ),
-                  Text(firstImgTitle, style: TextStyle(fontSize: 12, color: Colors.grey.shade600),)
+                  Text(
+                    firstImgTitle,
+                    style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                  )
                 ],
               ),
               secondImg
             ],
           ),
-          SizedBox(height: 20,),
+          SizedBox(
+            height: 20,
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+              Text(
+                title,
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+              ),
               Row(
                 children: [
-                  Text(subTitle, style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),),
-                  Text(location, style: TextStyle(fontSize: 12, color: Colors.grey.shade600),)
+                  Text(
+                    subTitle,
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    location,
+                    style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+                  )
                 ],
               )
             ],
