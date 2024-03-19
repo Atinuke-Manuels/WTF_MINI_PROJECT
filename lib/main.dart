@@ -10,6 +10,7 @@ import 'package:blend/features/settings/page/settings_section.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'features/search/pages/search_section.dart';
 import 'firebase_options.dart';
 
 import 'features/login/page/login_page.dart';
@@ -52,6 +53,7 @@ class MyApp extends StatelessWidget {
         '/MessageSection': (context) => const MessageSection(),
         '/ProfileSection': (context) => const ProfileSection(),
         '/SettingsSection': (context) => const SettingsSection(),
+        '/SearchSection': (context) => const SearchSection(),
       });
   }
 }

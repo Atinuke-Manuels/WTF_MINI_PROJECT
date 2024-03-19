@@ -48,6 +48,12 @@ class NavigationDrawerSection extends StatelessWidget {
                 onPress: () {},
               ),
               DrawerItem(
+                boxColor: Colors.blue,
+                title: "Search",
+                image: Icons.search,
+                onPress: () {Navigator.pushNamed(context, '/SearchSection');},
+              ),
+              DrawerItem(
                 boxColor: Color(0xFF00A6A3),
                 title: "Notification Settings",
                 image: Icons.settings,
@@ -59,7 +65,7 @@ class NavigationDrawerSection extends StatelessWidget {
                 image: Icons.heart_broken,
                 onPress: () {},
               ),
-              SizedBox(height: 70,),
+              SizedBox(height: 85,),
               DrawerItem(
                 boxColor: Colors.red.shade600,
                 title: "Logout",
